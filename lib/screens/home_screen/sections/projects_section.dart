@@ -104,10 +104,10 @@ class ProjectCard extends StatelessWidget {
             child: AnimatedContainer(
               duration: const Duration(milliseconds: 500),
               decoration: BoxDecoration(
-                color: isHovered ? AppColors.selectionColor  : null,
+                color: isHovered && layoutEnum != LayoutEnum.mobileLayout ? AppColors.selectionColor  : null,
                 borderRadius: BorderRadius.circular(10),
               ),
-              padding: (layoutEnum == LayoutEnum.mobileLayout && !kIsWeb) ? const EdgeInsets.only(bottom: 20.0) : const EdgeInsets.all(25.0),
+              padding: (layoutEnum == LayoutEnum.mobileLayout) ? const EdgeInsets.only(bottom: 20.0) : const EdgeInsets.all(25.0),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
