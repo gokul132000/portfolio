@@ -1,0 +1,4 @@
+enum LayoutEnum {
+  mobileLayout,
+  webLayout
+}
