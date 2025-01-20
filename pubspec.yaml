@@ -30,9 +30,6 @@ flutter:
   assets:
     - assets/
     - assets/images/social_share/
-    - assets/images/quiz_app/
-    - assets/images/portfolio_app/
-    - assets/images/login_app/
 
   fonts:
     - family: Open Sans
